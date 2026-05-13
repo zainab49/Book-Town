@@ -1,0 +1,9 @@
+CREATE TABLE town_assets (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  user_id INTEGER NOT NULL REFERENCES users(id),
+  book_id INTEGER REFERENCES books(id),
+  model_filename TEXT NOT NULL,
+  pos_x REAL NOT NULL,
+  pos_z REAL NOT NULL,
+  placed_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,1 @@
+ALTER TABLE town_assets ADD COLUMN rotation_y REAL NOT NULL DEFAULT 0.0;

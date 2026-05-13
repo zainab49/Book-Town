@@ -1,0 +1,6 @@
+booktown.db
+*.exe
+.env
+.env.local
+.env.*
+!.env.example

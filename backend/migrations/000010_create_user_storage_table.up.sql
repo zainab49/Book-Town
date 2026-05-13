@@ -1,0 +1,7 @@
+CREATE TABLE user_storage (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id    INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    model_filename TEXT NOT NULL,
+    book_id    INTEGER REFERENCES books(id) ON DELETE SET NULL,
+    stored_at  DATETIME DEFAULT CURRENT_TIMESTAMP
+);
